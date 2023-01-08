@@ -1,0 +1,38 @@
+<form [formGroup]="formValidacion" (ngSubmit)="onSubmit()" id="formulario">
+  <div>Nombre:</div>
+  <input type="text" formControlName="nombre" id="nombre" />
+  <br />
+  <br />
+  <div>Apellidos:</div>
+  <input type="text" formControlName="apellido" id="apellido" />
+  <br />
+  <br />
+  <div>Edad:</div>
+  <input type="number" formControlName="edad" id="edad" />
+  <br />
+  <br />
+  <div>Foto:</div>
+  <input type="text" formControlName="foto" id="foto" />
+  <br />
+  <br />
+  <div>Descripcion:</div>
+  <input type="text" formControlName="descripcion" id="descripcion" />
+  <br />
+  <br />
+  <div>Contraseña:</div>
+  <input type="text" formControlName="clave" id="clave" />
+  <br />
+  <br />
+  <div>Repetir contraseña:</div>
+  <input type="text" formControlName="clave" id="clave" />
+  <br />
+  <br />
+  <button id="guardar" type="submit">Guardar</button>
+</form>
+
+<style>
+    #formulario{
+        text-align: center;
+        position: inherit;
+    }
+</style>
